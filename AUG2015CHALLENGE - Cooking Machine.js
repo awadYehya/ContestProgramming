@@ -98,9 +98,6 @@ process.stdin.on('data', function (chunk) {
 	var lines = chunk.toString().split('\n');
 
 	lines.forEach(function (line) {
-		if (line === '42') {
-			process.exit();
-		}
 
 		var numbers = line.split(' ').map(function (item) {
 			return parseInt(item, 10);
